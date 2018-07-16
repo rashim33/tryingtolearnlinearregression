@@ -28,14 +28,7 @@ print('Coefficients: \n', regr.coef_)
 # The mean squared error
 print("Mean squared error: %.2f"
       % mean_squared_error(diabetes_y_test, diabetes_y_pred))
-# 1 is perfect prediction?
+# 1 is perfect prediction???
 print('Variance score: %.2f' % r2_score(diabetes_y_test, diabetes_y_pred))
 
-# plot
-plt.scatter(diabetes_X_test, diabetes_y_test,  color='black')
-plt.plot(diabetes_X_test, diabetes_y_pred, color='blue', linewidth=3)
-
-plt.xticks(())
-plt.yticks(())
-
-plt.show()
+# need to plot using numpy 
